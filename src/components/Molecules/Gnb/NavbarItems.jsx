@@ -4,13 +4,11 @@ import { NAV_TITLES } from "../../../constants/NAV_TITLES";
 
 const NavbarItems = () => {
   return (
-    <div>
-      <ul className="navbar-menu">
-        {NAV_TITLES.map((title, idx) => (
-          <NavbarItem key={idx} title={title} />
-        ))}
-      </ul>
-    </div>
+    <ul className="navbar-menu">
+      {NAV_TITLES.map((title) => (
+        <NavbarItem key={title.id} title={title.name} />
+      ))}
+    </ul>
   );
 };
 

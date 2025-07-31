@@ -2,6 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0px auto;
+  position: sticky;
+  top: 10px;
+  padding-bottom: 20px;
+  z-index: 2;
+  border-bottom: 1px solid gray;
+  background-color: white;
 }
 
 .header-utils {
