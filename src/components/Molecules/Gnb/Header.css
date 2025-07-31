@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-utils {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.sns-icon {
+  display: flex;
+  gap: 10px;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.header-links hr {
+  height: 10px;
+}
