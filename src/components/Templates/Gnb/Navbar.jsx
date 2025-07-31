@@ -6,7 +6,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <a href="#">
+      <a href="#" aria-label="Go to Monami homepage">
         <img src="/imgi_6_logo.jpg" alt="모나미 로고" />
       </a>
       <NavbarItems />

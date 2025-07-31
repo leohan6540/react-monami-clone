@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import { HEADER_SNS_LOGO } from "../../../constants/HEADER_SNS_LOGO";
 
 const Header = () => {
   return (
@@ -10,15 +11,9 @@ const Header = () => {
           <span>Kor</span>
         </div>
         <div className="sns-icon">
-          <a href="#">
-            <img src="imgi_3_sns_facebook.gif" alt="sns아이콘" />
-          </a>
-          <a href="#">
-            <img src="imgi_3_sns_facebook.gif" alt="sns아이콘" />
-          </a>
-          <a href="#">
-            <img src="imgi_3_sns_facebook.gif" alt="sns아이콘" />
-          </a>
+          {HEADER_SNS_LOGO.map((logo) => (
+            <img key={logo.id} src={logo.src} alt={logo.alt} />
+          ))}
         </div>
       </div>
       <div className="header-links">

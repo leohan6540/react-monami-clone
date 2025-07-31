@@ -2,4 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
+  position: sticky;
+  top: 71px;
+  background-color: white;
+  z-index: 1;
 }
