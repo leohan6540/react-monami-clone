@@ -1,8 +1,8 @@
 import React from "react";
-import MainHero3 from "../../Organisms/main/MainHero3";
+import MainHeroSection from "../../Organisms/main/MainHeroSection";
 
 const MainHero = () => {
-  return <MainHero3 />;
+  return <MainHeroSection />;
 };
 
 export default MainHero;
