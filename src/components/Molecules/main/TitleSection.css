@@ -1,0 +1,20 @@
+.title-section {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.title-section h2 {
+  font-size: 40px;
+}
+
+.title-section hr {
+  width: 30px;
+  height: 5px;
+  background-color: red;
+}
+
+.best-product-title {
+  justify-content: center;
+  align-items: center;
+}

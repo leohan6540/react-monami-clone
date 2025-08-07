@@ -1,3 +1,56 @@
+.product-item-wrap {
+  position: relative;
+}
+
 .product-item {
   border-radius: 30px;
+}
+
+.product-item:hover {
+  cursor: pointer;
+}
+
+.product-item-red-box {
+  background-color: transparent;
+  opacity: 0;
+  z-index: 0.1;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.red-box-title {
+  font-size: 12px;
+}
+
+.red-box-sub-title {
+  font-size: 21px;
+}
+
+.red-box-cross {
+  transform: rotateZ(0deg);
+  transition: transform 0.5s ease;
+  font-size: 70px;
+  font-weight: 100;
+  opacity: 0.5;
+}
+
+.product-item-red-box:hover .red-box-cross {
+  transform: rotateZ(-90deg);
+}
+
+.product-item-red-box.is-hover {
+  background-color: #c40f39;
+  opacity: 1;
 }

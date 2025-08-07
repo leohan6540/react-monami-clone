@@ -5,11 +5,18 @@ import { SECTION_PRODUCT_IMAGES } from "../../../constants/SECTION_PRODUCT_IMAGE
 const ProductItems = () => {
   return (
     <>
-      {SECTION_PRODUCT_IMAGES.map(({ src, alt, id }) => (
-        <div className={id} key={id}>
-          <ProductItem src={src} alt={alt} />
-        </div>
-      ))}
+      {SECTION_PRODUCT_IMAGES.map(
+        ({ src, alt, id, redBoxTitle, redBoxSubTitle }) => (
+          <div className={id} key={id}>
+            <ProductItem
+              src={src}
+              alt={alt}
+              redBoxTitle={redBoxTitle}
+              redBoxSubTitle={redBoxSubTitle}
+            />
+          </div>
+        )
+      )}
     </>
   );
 };

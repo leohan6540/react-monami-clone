@@ -1,0 +1,8 @@
+.product-title {
+  background-color: white;
+  width: 260px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
